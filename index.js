@@ -17,6 +17,18 @@ content.append(dogImage)
 
 let dogDetails = document.createElement('div')
 dogDetails.setAttribute('class', 'dog-details')
-content.append(dogDetails)
+dogDetails.innerHTML = `<h3> Description:</h3>
+<p>
+    This gentle dog is aloof toward her owner, and never comes when called.
+    She always acts as though any stranger she meets will harm her,
+    and dislikes other animals.
+</p>
+<h3>Feeding Times:</h3>
+<ul>
+    <li>9:00 am</li>
+    <li>12:00 pm</li>
+    <li>5:00 pm</li>
+</ul>`
+content.append(dogDetails) 
 
 
